@@ -1,5 +1,5 @@
 import getRandomInRange from '../random.js';
-import evenGame from '../index.js';
+import Game from '../index.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".'; // Правила
 
@@ -10,7 +10,7 @@ const gameData = () => {
 };
 
 const startEven = () => {
-  evenGame(gameData, rule);
+  Game(gameData, rule);
 };
 
 export default startEven;

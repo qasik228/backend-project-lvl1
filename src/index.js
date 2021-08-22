@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 const round = 3; // Кол-во раундов
 // Правила должны приходить извне
 
-// Код игры
-const evenGame = (gameData, rule) => {
+// Код проверки ответов
+const Game = (gameData, rule) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello ${name}!`);
@@ -25,4 +25,4 @@ const evenGame = (gameData, rule) => {
   }
   console.log(`Congratulations, ${name}!`); // OMG MLG
 };
-export default evenGame;
+export default Game;
