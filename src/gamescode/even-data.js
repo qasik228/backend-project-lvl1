@@ -1,5 +1,5 @@
-import getRandomInRange from './random.js';
-import evenGame from './gamescode/even.js';
+import getRandomInRange from '../random.js';
+import evenGame from '../index.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".'; // Правила
 
