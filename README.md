@@ -10,3 +10,7 @@ brain-even
 Game
 brain-calc
 [![asciicast](https://asciinema.org/a/7qLw80tGc9W5gZh3whQbNiFb8.svg)](https://asciinema.org/a/7qLw80tGc9W5gZh3whQbNiFb8)
+
+Game
+brain-gcd
+[![asciicast](https://asciinema.org/a/BSrPxVOacK1tsakfePJY71ryy.svg)](https://asciinema.org/a/BSrPxVOacK1tsakfePJY71ryy)
