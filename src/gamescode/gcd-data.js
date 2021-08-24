@@ -16,10 +16,10 @@ const answer = (num1, num2) => {
 };
 
 const gameData = () => {
-  const num1 = getRandomInRange(1, 100);
-  const num2 = getRandomInRange(1, 100);
-  const correct = answer(num1, num2);
-  const quest = `${num1} ${num2}`;
+  const num1 = getRandomInRange(1, 100); // число 1
+  const num2 = getRandomInRange(1, 100); // число 2
+  const correct = answer(num1, num2); // верный ответ
+  const quest = `${num1} ${num2}`; // задача
   return [quest, correct];
 };
 

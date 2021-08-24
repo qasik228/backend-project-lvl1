@@ -5,7 +5,7 @@ const rule = 'Answer "yes" if the number is even, otherwise answer "no".'; // П
 
 const gameData = () => {
   const quest = getRandomInRange(1, 100);
-  const correct = quest % 2 === 0 ? 'yes' : 'no';
+  const correct = quest % 2 === 0 ? 'yes' : 'no'; // проверка четности и определение верного ответа
   return [quest, correct];
 };
 
