@@ -3,22 +3,29 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![link](https://github.com/qasik228/backend-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/qasik228/backend-project-lvl1/actions/workflows/link.yml)
 
-Game
-brain-even
-[![asciicast](https://asciinema.org/a/wWct48M2Ye7dyVNI6x8Vi7b5G.svg)](https://asciinema.org/a/wWct48M2Ye7dyVNI6x8Vi7b5G)
+### Установка
+1) Выполнить глобальную установку последней версии node.js;
+2) Склонировать предложенный репозиторий;
+3) Провести установку зависимостей (выполняется командой: make install);
+4) Запустить игру.
 
-Game
-brain-calc
-[![asciicast](https://asciinema.org/a/7qLw80tGc9W5gZh3whQbNiFb8.svg)](https://asciinema.org/a/7qLw80tGc9W5gZh3whQbNiFb8)
+### Games
+Game:
+brain-even. Предлагается определить - является ли число четным.
+[![asciicast](https://asciinema.org/a/hvB5DHtaX1JsHM6a59CdISe1c.svg)](https://asciinema.org/a/hvB5DHtaX1JsHM6a59CdISe1c)
 
-Game
-brain-gcd
-[![asciicast](https://asciinema.org/a/BSrPxVOacK1tsakfePJY71ryy.svg)](https://asciinema.org/a/BSrPxVOacK1tsakfePJY71ryy)
+Game:
+brain-calc. Решение армифметической задачи.
+[![asciicast](https://asciinema.org/a/ZwuT6E0T68KF799O89yKOZSFt.svg)](https://asciinema.org/a/ZwuT6E0T68KF799O89yKOZSFt)
 
-Game
-brain-progression
-[![asciicast](https://asciinema.org/a/EsUM4UO95NW680go6Seo4gdmj.svg)](https://asciinema.org/a/EsUM4UO95NW680go6Seo4gdmj)
+Game:
+brain-gcd. Нахождение наибольшего общего делителя (НОД) двух чисел.
+[![asciicast](https://asciinema.org/a/8EISqXdii3Q98kBI43qGTSFMs.svg)](https://asciinema.org/a/8EISqXdii3Q98kBI43qGTSFMs)
 
-Game
-brain-prime
-[![asciicast](https://asciinema.org/a/u0JERdARf8ikL7wA4OKyXQgmX.svg)](https://asciinema.org/a/u0JERdARf8ikL7wA4OKyXQgmX)
+Game:
+brain-progression. Поиск пропущенного в прогрессии числа.
+[![asciicast](https://asciinema.org/a/Nf85sreIH6tfYk7zS3EAr781S.svg)](https://asciinema.org/a/Nf85sreIH6tfYk7zS3EAr781S)
+
+Game:
+brain-prime. Определить является ли число простыми.
+[![asciicast](https://asciinema.org/a/r0gzNABhMKQcGa9nofMdEg4dL.svg)](https://asciinema.org/a/r0gzNABhMKQcGa9nofMdEg4dL)

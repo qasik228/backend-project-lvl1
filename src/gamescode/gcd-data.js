@@ -3,6 +3,7 @@ import Game from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.'; // Правила
 
+// нахождение НОД двух чисел
 const answer = (num1, num2) => {
   const minnum = Math.min(num1, num2);
   let gcd = 1;

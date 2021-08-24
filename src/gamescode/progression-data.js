@@ -3,23 +3,23 @@ import Game from '../index.js';
 
 const rule = 'What number is missing in the progression?'; // Правила
 
-const progression = (massiv, a1, d) => {
-  const prog = []; // прогрессия
+const getProgression = (massiv, a1, d) => {
+  const progression = []; // прогрессия
   for (let i = 0; i < massiv; i += 1) {
-    prog.push(a1 + d * i);
+    progression.push(a1 + d * i);
   }
-  return prog;
+  return progression;
 };
 
 const gameData = () => {
   const massiv = getRandomInRange(5, 10); // длинна прогрессии
   const a1 = getRandomInRange(1, 50); // старт прогрессии
   const d = getRandomInRange(1, 25); // шаг (разность прогрессии)
-  const prog = progression(massiv, a1, d); // создание прогрессии
+  const progression = getProgression(massiv, a1, d); // создание прогрессии
   const an = getRandomInRange(0, massiv - 1); // скрытый n-ый элемент прогрессии
-  const correct = String(prog[an]);
-  prog[an] = '..';
-  const quest = prog.join(' ');
+  const correct = String(progression[an]);
+  progression[an] = '..';
+  const quest = progression.join(' ');
   return [quest, correct];
 };
 
