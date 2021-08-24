@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import startPrime from '../src/gamescode/progression-data.js';
+import startPrime from '../src/gamescode/prime-data.js';
 
 startPrime();

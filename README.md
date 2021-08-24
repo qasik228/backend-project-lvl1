@@ -18,3 +18,7 @@ brain-gcd
 Game
 brain-progression
 [![asciicast](https://asciinema.org/a/EsUM4UO95NW680go6Seo4gdmj.svg)](https://asciinema.org/a/EsUM4UO95NW680go6Seo4gdmj)
+
+Game
+brain-prime
+[![asciicast](https://asciinema.org/a/u0JERdARf8ikL7wA4OKyXQgmX.svg)](https://asciinema.org/a/u0JERdARf8ikL7wA4OKyXQgmX)
