@@ -1,10 +1,10 @@
 import getRandomInRange from '../random.js';
-import Game from '../index.js';
+import runGame from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.'; // Правила
 
 // нахождение НОД двух чисел
-const answer = (num1, num2) => {
+const getGcd = (num1, num2) => {
   const minnum = Math.min(num1, num2);
   let gcd = 1;
   for (let i = 1; i <= minnum; i += 1) {
@@ -15,16 +15,16 @@ const answer = (num1, num2) => {
   return String(gcd);
 };
 
-const gameData = () => {
+const getGameData = () => {
   const num1 = getRandomInRange(1, 100); // число 1
   const num2 = getRandomInRange(1, 100); // число 2
-  const correct = answer(num1, num2); // верный ответ
+  const correct = getGcd(num1, num2); // верный ответ
   const quest = `${num1} ${num2}`; // задача
   return [quest, correct];
 };
 
 const startGcd = () => {
-  Game(gameData, rule);
+  runGame(getGameData, rule);
 };
 
 export default startGcd;

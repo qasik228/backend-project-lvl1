@@ -1,9 +1,9 @@
 import getRandomInRange from '../random.js';
-import Game from '../index.js';
+import runGame from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'; // Правила
 // тест простоты
-const answer = (quest) => {
+const getPrime = (quest) => {
   if (quest === 1) {
     return 'no';
   }
@@ -16,14 +16,14 @@ const answer = (quest) => {
   return 'yes';
 };
 
-const gameData = () => {
+const getGameData = () => {
   const quest = getRandomInRange(1, 100);
-  const correct = answer(quest);
+  const correct = getPrime(quest);
   return [quest, correct];
 };
 
 const startPrime = () => {
-  Game(gameData, rule);
+  runGame(getGameData, rule);
 };
 
 export default startPrime;
