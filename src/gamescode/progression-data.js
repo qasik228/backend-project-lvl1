@@ -3,9 +3,10 @@ import runGame from '../index.js';
 
 const rule = 'What number is missing in the progression?'; // Правила
 
-const hideCorrect = (progression, hideIndex) => {
-  progression[hideIndex] = '..';
-  return progression.join(' ');
+const hideCorrect = (progression, hiddenIndex) => {
+  const a = progression;
+  a[hiddenIndex] = '..';
+  return a.join(' ');
 };
 
 const getProgression = (length, start, step) => {
@@ -21,9 +22,9 @@ const getGameData = () => {
   const start = getRandomInRange(1, 50); // старт прогрессии
   const step = getRandomInRange(1, 25); // шаг (разность прогрессии)
   const progression = getProgression(length, start, step); // создание прогрессии
-  const hideIndex = getRandomInRange(0, length - 1); // скрытый n-ый элемент прогрессии
-  const correct = String(progression[hideIndex]);
-  const quest = hideCorrect(progression, hideIndex);
+  const hiddenIndex = getRandomInRange(0, length - 1); // скрытый n-ый элемент прогрессии
+  const correct = String(progression[hiddenIndex]);
+  const quest = hideCorrect(progression, hiddenIndex);
   return [quest, correct];
 };
 
