@@ -4,9 +4,9 @@ import runGame from '../index.js';
 const rule = 'What number is missing in the progression?'; // Правила
 
 const hideCorrect = (progression, hiddenIndex) => {
-  const a = progression;
-  a[hiddenIndex] = '..';
-  return a.join(' ');
+  const finalprog = progression;
+  finalprog[hiddenIndex] = '..';
+  return finalprog.join(' ');
 };
 
 const getProgression = (length, start, step) => {
