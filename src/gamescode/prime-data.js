@@ -3,22 +3,22 @@ import runGame from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'; // Правила
 // тест простоты
-const getPrime = (quest) => {
-  if (quest === 1) {
-    return 'no';
+const isPrime = (quest) => {
+  if (quest < 2) {
+    return false;
   }
   const check = Math.sqrt(quest);
   for (let i = 2; i <= Math.floor(check); i += 1) {
     if (quest % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const getGameData = () => {
   const quest = getRandomInRange(1, 100);
-  const correct = getPrime(quest);
+  const correct = isPrime(quest) ? 'yes' : 'no';
   return [quest, correct];
 };
 

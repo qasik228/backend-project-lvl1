@@ -13,7 +13,7 @@ const getCalc = (num1, num2, symbol) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      return console.log('This operation is not supported');
   }
 };
 
