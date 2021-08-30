@@ -15,14 +15,12 @@ const runGame = (gameData, rule) => {
     console.log(`Question: ${quest}`);
     const answer = readlineSync.question('Your answer: ');
     // Проверка ответа игрока
-    if (answer === correct) {
-      console.log('Correct!'); // Харошь
-    }
     if (answer !== correct) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'`); // Shit happens
       console.log(`Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!'); // Харошь
   }
   console.log(`Congratulations, ${name}!`); // OMG MLG
 };
