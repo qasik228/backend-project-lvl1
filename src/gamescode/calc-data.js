@@ -11,9 +11,9 @@ const getCalc = (num1, num2, symbol) => {
     case '-':
       return num1 - num2;
     case '*':
-      throw `Unknown operator '${symbol}'`;
+      return num1 * num2;
     default:
-      throw `Unknown operator '${symbol}'`;
+      throw new Error(`Unknown operator '${symbol}'`); // try {} cath {} ???
   }
 };
 
