@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 
 const round = 3; // Кол-во раундов
-// Правила должны приходить извне
 
 // Код проверки ответов
 const runGame = (gameData, rule) => {
@@ -16,12 +15,12 @@ const runGame = (gameData, rule) => {
     const answer = readlineSync.question('Your answer: ');
     // Проверка ответа игрока
     if (answer !== correct) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'`); // Shit happens
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'`); // Неверно
       console.log(`Let's try again, ${name}!`);
       return;
     }
-    console.log('Correct!'); // Харошь
+    console.log('Correct!'); // Верно
   }
-  console.log(`Congratulations, ${name}!`); // OMG MLG
+  console.log(`Congratulations, ${name}!`); // Конец
 };
 export default runGame;
